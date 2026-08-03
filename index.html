@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>영어 명언 학습 앱</title>
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 12px;
+  }
+  .tagline {
+    color: #555;
+    font-size: 16px;
+    margin: 0;
+  }
+  .screenshot-placeholder {
+    margin: 32px auto;
+    width: 240px;
+    height: 480px;
+    border: 2px dashed #ccc;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding: 16px;
+  }
+  .install-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .install-card {
+    flex: 1 1 280px;
+    max-width: 320px;
+    border: 1px solid #e2e2e2;
+    border-radius: 16px;
+    padding: 24px;
+    background: #fff;
+    text-align: center;
+  }
+  .install-card h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+  }
+  .install-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+  }
+  .qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px;
+    display: block;
+    border-radius: 8px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .btn-primary {
+    background: #2563eb;
+    color: #fff;
+  }
+  .btn-secondary {
+    background: #f0f0f0;
+    color: #222;
+  }
+  .btn-disabled {
+    background: #eee;
+    color: #999;
+    pointer-events: none;
+  }
+  .note {
+    font-size: 12px;
+    color: #999;
+    margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>영어 명언 학습 앱</h1>
+    <p class="tagline">
+      영어 명언을 읽고, 듣고, 한국어 번역을 확인한 뒤<br />
+      암기해서 직접 입력해보는 개인용 미니 학습 앱
+    </p>
+  </header>
+
+  <div class="screenshot-placeholder">
+    스크린샷 자리
+  </div>
+
+  <div class="install-grid">
+    <div class="install-card">
+      <h2>🍎 iOS</h2>
+      <p>iOS는 Expo Go 앱이 필요합니다.<br />먼저 Expo Go를 설치한 뒤, 아래 QR코드를 스캔해주세요.</p>
+      <img
+        class="qr-code"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fexpo.dev%2Fpreview%2Fupdate%3Fmessage%3D%25EC%25B4%2588%25EA%25B8%25B0%2520%25EA%25B2%258C%25EC%258B%259C%253A%2520%25EB%25AA%2585%25EC%2596%25B8%2520%25ED%2595%2599%25EC%258A%25B5%2520%25EC%2595%25B1%26updateRuntimeVersion%3D1.0.0%26createdAt%3D2026-08-03T06%253A55%253A34.383Z%26slug%3Dp0803%26projectId%3D830ee618-e4b4-4f98-ba03-aedb3b752f84%26group%3D87e88b64-b335-49d7-9f16-87fa61a8f933"
+        alt="Expo Go로 앱을 여는 QR코드"
+      />
+      <a class="btn btn-secondary" href="https://apps.apple.com/app/expo-go/id982107779">Expo Go 다운로드 (App Store)</a>
+      <p class="note">Expo Go 설치 후 앱 안에서 위 QR코드를 다시 스캔해주세요.</p>
+    </div>
+
+    <div class="install-card">
+      <h2>🤖 Android</h2>
+      <p>Android는 Expo Go 없이 바로 설치할 수 있습니다.</p>
+      <!-- TODO: EAS Build(preview 프로필) 완료 후 실제 다운로드 링크로 교체 -->
+      <a class="btn btn-disabled" href="#">APK 다운로드 (빌드 준비 중)</a>
+      <p class="note">빌드가 끝나는 대로 이 버튼이 실제 다운로드 링크로 바뀝니다.</p>
+    </div>
+  </div>
+</main>
+</body>
+</html>
